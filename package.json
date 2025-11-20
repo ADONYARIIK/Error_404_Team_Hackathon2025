@@ -1,0 +1,34 @@
+{
+    "name": "phaser-firebase-game",
+    "version": "1.0.0",
+    "description": "Web game for school Hackathon (Error 404 Team) on Phaser 3 + Vite + Firebase.",
+    "main": "src/main.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "deploy": "firebase deploy"
+    },
+    "keywords": [
+        "phaser",
+        "vite",
+        "firebase",
+        "game",
+        "hackathon",
+        "texturepacker"
+    ],
+    "author": "Error 404 Team",
+    "license": "MIT",
+    "dependencies": {
+        "phaser": "^3.80.0",
+        "firebase": "^11.0.0"
+    },
+    "devDependencies": {
+        "vite": "^5.3.0",
+        "firebase-tools": "^13.0.0"
+    },
+    "engines": {
+        "node": ">=20.0.0",
+        "npm": ">=9.0.0"
+    }
+}
