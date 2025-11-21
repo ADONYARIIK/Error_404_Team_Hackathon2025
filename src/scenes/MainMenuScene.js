@@ -27,32 +27,30 @@ export default class MainMenuScene extends Phaser.Scene {
 
 
         const button = [
-            
+
             this.add.image(650, 700, 'gui', 'play.png').setOrigin(0).setScale(5).setInteractive({ useHandCursor: true }),
             this.add.image(650, 700, 'gui', 'play2.png').setOrigin(0).setScale(5).setInteractive({ useHandCursor: true }).setVisible(false)
 
         ];
 
-
-
-        button.forEach((buttonchange) =>{
-            buttonchange.on('pointerover', ()=>{
-               this.scaleUpBtn(buttonchange, 5.5)
+        button.forEach((buttonchange) => {
+            buttonchange.on('pointerover', () => {
+                this.scaleUpBtn(buttonchange, 5.5)
             })
-            buttonchange.on('pointerout', ()=>{
-               this.scaleDownBtn(buttonchange, 5)
+            buttonchange.on('pointerout', () => {
+                this.scaleDownBtn(buttonchange, 5)
             })
-            buttonchange.on('pointerdown', ()=>{
+            buttonchange.on('pointerdown', () => {
                 button[1].setVisible(true);
                 this.outAnimation();
-                setTimeout(()=>{
+                setTimeout(() => {
                     this.scene.start('GameScene');
-                },1000)
+                }, 1000)
             });
         })
 
 
-        const soundOn = this.add.image(1200, 500, 'gui','icon1.png').setScale(6).setInteractive({ useHandCursor: true });
+        const soundOn = this.add.image(1200, 500, 'gui', 'icon1.png').setScale(6).setInteractive({ useHandCursor: true });
         soundOn.on('pointerover', () => {
             this.scaleUpBtn(soundOn, 5.5);
         });
@@ -61,7 +59,7 @@ export default class MainMenuScene extends Phaser.Scene {
         });
 
 
-        const soundOff = this.add.image(1200, 500, 'gui','icon3.png').setScale(6).setVisible(false).setInteractive({ useHandCursor: true });
+        const soundOff = this.add.image(1200, 500, 'gui', 'icon3.png').setScale(6).setVisible(false).setInteractive({ useHandCursor: true });
         soundOff.on('pointerover', () => {
             this.scaleUpBtn(soundOff, 5.5);
         });
@@ -96,7 +94,7 @@ export default class MainMenuScene extends Phaser.Scene {
         })
     }
 
-     scaleUpBtn(obj, scale) {
+    scaleUpBtn(obj, scale) {
         this.tweens.add({
             targets: obj,
             scale: scale,
