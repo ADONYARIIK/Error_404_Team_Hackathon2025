@@ -115,7 +115,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -170,7 +170,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -215,7 +215,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }],
@@ -229,7 +229,7 @@
         {
          "columns":14,
          "firstgid":1,
-         "image":"..\/tilesets\/tiles.png",
+         "image":"tilesets\/tiles.png",
          "imageheight":208,
          "imagewidth":224,
          "margin":0,
