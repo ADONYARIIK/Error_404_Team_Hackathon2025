@@ -10,7 +10,7 @@
 			"scale": 1,
 			"frames": [
 				{
-					"filename": "gui/bg.png",
+					"filename": "bg.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -31,7 +31,7 @@
 					}
 				},
 				{
-					"filename": "gui/cloudBigSize.png",
+					"filename": "cloudBigSize.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -52,7 +52,7 @@
 					}
 				},
 				{
-					"filename": "gui/gameName.png",
+					"filename": "gameName.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -73,7 +73,7 @@
 					}
 				},
 				{
-					"filename": "gui/healthBar.png",
+					"filename": "healthBar.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
