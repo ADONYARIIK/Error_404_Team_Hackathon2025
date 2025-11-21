@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import { loadTiledEntities, loadTiledTriggerZones } from '../assets/utils/tiledLoader';
 
 export default class GameScene extends Phaser.Scene {
     constructor() {
@@ -11,6 +12,8 @@ export default class GameScene extends Phaser.Scene {
 
     create() {
         this.scene.launch('UIScene');
+
+        this.cameras.main.setZoom(2);
         const level1 = this.make.tilemap({ key: 'level1' });
 
         this.cameras.main.setBounds(0, 0, level1.widthInPixels, level1.heightInPixels);
