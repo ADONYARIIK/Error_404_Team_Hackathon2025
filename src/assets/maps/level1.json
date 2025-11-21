@@ -227,8 +227,17 @@
  "tileheight":16,
  "tilesets":[
         {
+         "columns":14,
          "firstgid":1,
-         "source":"..\/tilesets\/tiles.tsx"
+         "image":"..\/tilesets\/tiles.png",
+         "imageheight":208,
+         "imagewidth":224,
+         "margin":0,
+         "name":"tiles",
+         "spacing":0,
+         "tilecount":182,
+         "tileheight":16,
+         "tilewidth":16
         }],
  "tilewidth":16,
  "type":"map",
