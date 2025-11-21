@@ -23,28 +23,45 @@ export default class MainMenuScene extends Phaser.Scene {
 
         ];
 
-        const button = this.add.image(550, 700, 'gui', 'gameName.png').setOrigin(0).setScale(0.5).setInteractive({ useHandCursor: true });
+        const button = [
+            
+            this.add.image(650, 700, 'gui', 'play.png').setOrigin(0).setScale(5).setInteractive({ useHandCursor: true }),
+            this.add.image(650, 700, 'gui', 'play2.png').setOrigin(0).setScale(5).setInteractive({ useHandCursor: true }).setVisible(false)
 
-        button.on('pointerdown', () => {
-            this.outAnimation();
+        ];
+
+        button.forEach((buttonchange) =>{
+            buttonchange.on('pointerover', ()=>{
+               this.scaleUpBtn(buttonchange, 5.5)
+            })
+            buttonchange.on('pointerout', ()=>{
+               this.scaleDownBtn(buttonchange, 5)
+            })
+            buttonchange.on('pointerdown', ()=>{
+                button[1].setVisible(true);
+                this.outAnimation();
+                setTimeout(()=>{
+                    this.scene.start('GameScene');
+                },1000)
+            });
         })
 
 
-        const soundOn = this.add.image(1000, 400, 'gui','icon1.png').setScale(4).setInteractive({ useHandCursor: true });
+        const soundOn = this.add.image(1200, 500, 'gui','icon1.png').setScale(6).setInteractive({ useHandCursor: true });
         soundOn.on('pointerover', () => {
-            this.scaleUpBtn(soundOn, 4.5);
+            this.scaleUpBtn(soundOn, 5.5);
         });
         soundOn.on('pointerout', () => {
-            this.scaleDownBtn(soundOn, 4);
+            this.scaleDownBtn(soundOn, 6);
         });
 
 
-        const soundOff = this.add.image(1000, 400, 'gui','icon3.png').setScale(4).setVisible(false).setInteractive({ useHandCursor: true });
+        const soundOff = this.add.image(1200, 500, 'gui','icon3.png').setScale(6).setVisible(false).setInteractive({ useHandCursor: true });
         soundOff.on('pointerover', () => {
-            this.scaleUpBtn(soundOff, 4.5);
+            this.scaleUpBtn(soundOff, 5.5);
         });
         soundOff.on('pointerout', () => {
-            this.scaleDownBtn(soundOff, 4);
+            this.scaleDownBtn(soundOff, 6);
         });
 
 
