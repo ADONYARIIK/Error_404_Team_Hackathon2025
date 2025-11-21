@@ -31,7 +31,5 @@ export default class BootScene extends Phaser.Scene {
         WebFont.load({
             google: { families: ['Jacquard 12'] }
         });
-
-        this.load.audio('theme', './src/assets/audio/music/cottagecore.mp3');
     }
 }

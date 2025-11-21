@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "version": "0.6.7"
+  },
+  "savePath": "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets/tilesets",
+  "images": [
+    {
+      "name": "bariers.png",
+      "path": "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets/tilesets/bariers.png",
+      "folder": ""
+    }
+  ],
+  "folders": [
+    "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets/sprites/bariers"
+  ],
+  "packOptions": {
+    "textureName": "bariers",
+    "textureFormat": "png",
+    "removeFileExtension": false,
+    "prependFolderName": true,
+    "base64Export": false,
+    "tinify": false,
+    "tinifyKey": "",
+    "scale": 1,
+    "filter": "none",
+    "exporter": "Phaser 3",
+    "fileName": "pack-result",
+    "savePath": "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets/tilesets",
+    "width": 6000,
+    "height": 6000,
+    "fixedSize": false,
+    "powerOfTwo": false,
+    "padding": 0,
+    "extrude": 0,
+    "allowRotation": false,
+    "allowTrim": false,
+    "trimMode": "trim",
+    "alphaThreshold": "0",
+    "detectIdentical": false,
+    "packer": "MaxRectsPacker",
+    "packerMethod": "Smart"
+  }
+}
