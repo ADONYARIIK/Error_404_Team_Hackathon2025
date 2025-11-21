@@ -2,19 +2,13 @@
   "meta": {
     "version": "0.6.7"
   },
-  "savePath": "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets/tilesets",
-  "images": [
-    {
-      "name": "bariers.png",
-      "path": "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets/tilesets/bariers.png",
-      "folder": ""
-    }
-  ],
+  "savePath": "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets/atlas",
+  "images": [],
   "folders": [
-    "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets/sprites/bariers"
+    "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets"
   ],
   "packOptions": {
-    "textureName": "bariers",
+    "textureName": "spritesheet",
     "textureFormat": "png",
     "removeFileExtension": false,
     "prependFolderName": true,
@@ -25,7 +19,7 @@
     "filter": "none",
     "exporter": "Phaser 3",
     "fileName": "pack-result",
-    "savePath": "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets/tilesets",
+    "savePath": "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets/atlas",
     "width": 6000,
     "height": 6000,
     "fixedSize": false,
