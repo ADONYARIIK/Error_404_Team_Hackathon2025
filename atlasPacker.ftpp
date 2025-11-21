@@ -2,7 +2,7 @@
   "meta": {
     "version": "0.6.7"
   },
-  "savePath": "",
+  "savePath": "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets/atlas",
   "images": [],
   "folders": [
     "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets"
@@ -19,9 +19,9 @@
     "filter": "none",
     "exporter": "Phaser 3",
     "fileName": "pack-result",
-    "savePath": "",
-    "width": 2048,
-    "height": 2048,
+    "savePath": "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets/atlas",
+    "width": 6000,
+    "height": 6000,
     "fixedSize": false,
     "powerOfTwo": false,
     "padding": 0,
@@ -32,6 +32,6 @@
     "alphaThreshold": "0",
     "detectIdentical": false,
     "packer": "MaxRectsPacker",
-    "packerMethod": "SmartArea"
+    "packerMethod": "Smart"
   }
 }

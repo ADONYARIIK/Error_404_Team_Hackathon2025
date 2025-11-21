@@ -10,91 +10,28 @@
 			"scale": 1,
 			"frames": [
 				{
-					"filename": "bariers/violete_bariere_26.png",
+					"filename": "cloud.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 16,
-						"h": 16
+						"w": 32,
+						"h": 32
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 16,
-						"h": 16
+						"w": 32,
+						"h": 32
 					},
 					"frame": {
 						"x": 0,
 						"y": 0,
-						"w": 16,
-						"h": 16
+						"w": 32,
+						"h": 32
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_01.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 16,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					}
-				},
-				{
-					"filename": "bariers/violete_bariere_03.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 0,
-						"y": 16,
-						"w": 16,
-						"h": 16
-					}
-				},
-				{
-					"filename": "bariers/violete_bariere_04.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 16,
-						"y": 16,
-						"w": 16,
-						"h": 16
-					}
-				},
-				{
-					"filename": "bariers/violete_bariere_05.png",
+					"filename": "violete_bariere_51.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -115,7 +52,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_06.png",
+					"filename": "violete_bariere_02.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -136,7 +73,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_07.png",
+					"filename": "violete_bariere_03.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -157,7 +94,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_08.png",
+					"filename": "violete_bariere_04.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -178,7 +115,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_09.png",
+					"filename": "violete_bariere_05.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -199,7 +136,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_10.png",
+					"filename": "violete_bariere_06.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -220,7 +157,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_11.png",
+					"filename": "violete_bariere_07.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -241,7 +178,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_12.png",
+					"filename": "violete_bariere_08.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -262,7 +199,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_13.png",
+					"filename": "violete_bariere_09.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -283,7 +220,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_14.png",
+					"filename": "violete_bariere_10.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -304,7 +241,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_15.png",
+					"filename": "violete_bariere_11.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -325,7 +262,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_16.png",
+					"filename": "violete_bariere_12.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -346,7 +283,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_17.png",
+					"filename": "violete_bariere_13.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -367,7 +304,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_18.png",
+					"filename": "violete_bariere_14.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -388,7 +325,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_19.png",
+					"filename": "violete_bariere_15.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -409,7 +346,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_20.png",
+					"filename": "violete_bariere_16.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -430,7 +367,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_21.png",
+					"filename": "violete_bariere_17.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -451,7 +388,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_22.png",
+					"filename": "violete_bariere_18.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -472,7 +409,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_23.png",
+					"filename": "violete_bariere_19.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -493,7 +430,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_24.png",
+					"filename": "violete_bariere_20.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -514,7 +451,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_25.png",
+					"filename": "violete_bariere_21.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -535,7 +472,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_02.png",
+					"filename": "violete_bariere_22.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -556,7 +493,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_27.png",
+					"filename": "violete_bariere_23.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -577,7 +514,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_28.png",
+					"filename": "violete_bariere_24.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -598,7 +535,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_29.png",
+					"filename": "violete_bariere_25.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -619,7 +556,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_30.png",
+					"filename": "violete_bariere_01.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -640,7 +577,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_31.png",
+					"filename": "violete_bariere_27.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -661,7 +598,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_32.png",
+					"filename": "violete_bariere_28.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -682,7 +619,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_33.png",
+					"filename": "violete_bariere_29.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -703,7 +640,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_34.png",
+					"filename": "violete_bariere_30.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -724,7 +661,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_35.png",
+					"filename": "violete_bariere_31.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -745,7 +682,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_36.png",
+					"filename": "violete_bariere_32.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -766,7 +703,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_37.png",
+					"filename": "violete_bariere_33.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -787,7 +724,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_38.png",
+					"filename": "violete_bariere_34.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -808,7 +745,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_39.png",
+					"filename": "violete_bariere_35.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -829,7 +766,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_40.png",
+					"filename": "violete_bariere_36.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -850,7 +787,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_41.png",
+					"filename": "violete_bariere_37.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -871,7 +808,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_42.png",
+					"filename": "violete_bariere_38.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -892,7 +829,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_43.png",
+					"filename": "violete_bariere_39.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -913,7 +850,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_44.png",
+					"filename": "violete_bariere_40.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -934,7 +871,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_45.png",
+					"filename": "violete_bariere_41.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -955,7 +892,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_46.png",
+					"filename": "violete_bariere_42.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -976,7 +913,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_47.png",
+					"filename": "violete_bariere_43.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -997,7 +934,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_48.png",
+					"filename": "violete_bariere_44.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1018,7 +955,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_49.png",
+					"filename": "violete_bariere_45.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1039,7 +976,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_50.png",
+					"filename": "violete_bariere_46.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1060,7 +997,7 @@
 					}
 				},
 				{
-					"filename": "bariers/violete_bariere_51.png",
+					"filename": "violete_bariere_47.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1076,6 +1013,90 @@
 					"frame": {
 						"x": 112,
 						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "violete_bariere_48.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 112,
+						"y": 32,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "violete_bariere_49.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 112,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "violete_bariere_50.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 112,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "violete_bariere_26.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 112,
+						"y": 80,
 						"w": 16,
 						"h": 16
 					}

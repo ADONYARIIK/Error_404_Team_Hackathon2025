@@ -10,7 +10,7 @@
 			"scale": 1,
 			"frames": [
 				{
-					"filename": "assets/sprites/player/player_reload_03.png",
+					"filename": "player_reload_03.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -31,7 +31,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_shout_04.png",
+					"filename": "cloud.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -52,7 +52,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_death_02.png",
+					"filename": "player_death_02.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -73,7 +73,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_death_03.png",
+					"filename": "player_death_03.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -94,7 +94,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_death_04.png",
+					"filename": "player_death_04.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -115,7 +115,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_death_05.png",
+					"filename": "player_death_05.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -136,7 +136,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_death_06.png",
+					"filename": "player_death_06.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -157,7 +157,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_death_07.png",
+					"filename": "player_death_07.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -178,7 +178,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_idle.png",
+					"filename": "player_idle.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -199,7 +199,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_reload_01.png",
+					"filename": "player_reload_01.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -220,7 +220,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_reload_02.png",
+					"filename": "player_reload_02.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -241,7 +241,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_death_01.png",
+					"filename": "player_death_01.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -262,7 +262,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_reload_04.png",
+					"filename": "player_reload_04.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -283,7 +283,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_reload_05.png",
+					"filename": "player_reload_05.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -304,7 +304,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_run_01.png",
+					"filename": "player_run_01.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -325,7 +325,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_run_02.png",
+					"filename": "player_run_02.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -346,7 +346,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_run_03.png",
+					"filename": "player_run_03.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -367,7 +367,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_run_04.png",
+					"filename": "player_run_04.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -388,7 +388,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_shout_01.png",
+					"filename": "player_shout_01.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -409,7 +409,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_shout_02.png",
+					"filename": "player_shout_02.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -430,7 +430,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_shout_03.png",
+					"filename": "player_shout_03.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -451,91 +451,28 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile062.png",
+					"filename": "player_shout_04.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 16,
-						"h": 16
+						"w": 32,
+						"h": 32
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 16,
-						"h": 16
+						"w": 32,
+						"h": 32
 					},
 					"frame": {
 						"x": 32,
 						"y": 128,
-						"w": 16,
-						"h": 16
+						"w": 32,
+						"h": 32
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_23.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 32,
-						"y": 144,
-						"w": 16,
-						"h": 16
-					}
-				},
-				{
-					"filename": "assets/sprites/bariers/violete_bariere_24.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 48,
-						"y": 128,
-						"w": 16,
-						"h": 16
-					}
-				},
-				{
-					"filename": "assets/sprites/bariers/violete_bariere_25.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 48,
-						"y": 144,
-						"w": 16,
-						"h": 16
-					}
-				},
-				{
-					"filename": "assets/sprites/bariers/violete_bariere_26.png",
+					"filename": "violete_bariere_22.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -556,7 +493,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_27.png",
+					"filename": "violete_bariere_23.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -577,7 +514,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_28.png",
+					"filename": "violete_bariere_24.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -598,7 +535,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_29.png",
+					"filename": "violete_bariere_25.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -619,7 +556,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_30.png",
+					"filename": "violete_bariere_26.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -640,7 +577,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_31.png",
+					"filename": "violete_bariere_27.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -661,7 +598,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_32.png",
+					"filename": "violete_bariere_28.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -682,7 +619,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_33.png",
+					"filename": "violete_bariere_29.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -703,7 +640,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_34.png",
+					"filename": "violete_bariere_30.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -724,7 +661,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_35.png",
+					"filename": "violete_bariere_31.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -745,7 +682,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_36.png",
+					"filename": "violete_bariere_32.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -766,7 +703,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_37.png",
+					"filename": "violete_bariere_33.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -787,7 +724,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_38.png",
+					"filename": "violete_bariere_34.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -808,7 +745,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_39.png",
+					"filename": "violete_bariere_35.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -829,7 +766,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_40.png",
+					"filename": "violete_bariere_36.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -850,7 +787,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_41.png",
+					"filename": "violete_bariere_37.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -871,7 +808,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_42.png",
+					"filename": "violete_bariere_38.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -892,7 +829,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_43.png",
+					"filename": "violete_bariere_39.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -913,7 +850,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_44.png",
+					"filename": "violete_bariere_40.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -934,7 +871,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_45.png",
+					"filename": "violete_bariere_41.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -955,7 +892,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_46.png",
+					"filename": "violete_bariere_42.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -976,7 +913,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_47.png",
+					"filename": "violete_bariere_43.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -997,7 +934,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_48.png",
+					"filename": "violete_bariere_44.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1018,7 +955,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_49.png",
+					"filename": "violete_bariere_45.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1039,7 +976,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_50.png",
+					"filename": "violete_bariere_46.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1060,7 +997,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_51.png",
+					"filename": "violete_bariere_47.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1081,7 +1018,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/player/player_atack.png",
+					"filename": "violete_bariere_48.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1102,7 +1039,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_01.png",
+					"filename": "violete_bariere_49.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1123,7 +1060,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_03.png",
+					"filename": "violete_bariere_50.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1144,7 +1081,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_04.png",
+					"filename": "violete_bariere_51.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1165,7 +1102,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_05.png",
+					"filename": "player_atack.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1186,7 +1123,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_06.png",
+					"filename": "tile278.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1207,7 +1144,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_07.png",
+					"filename": "violete_bariere_02.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1228,7 +1165,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_08.png",
+					"filename": "violete_bariere_03.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1249,7 +1186,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_09.png",
+					"filename": "violete_bariere_04.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1270,7 +1207,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_10.png",
+					"filename": "violete_bariere_05.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1291,7 +1228,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_11.png",
+					"filename": "violete_bariere_06.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1312,7 +1249,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_12.png",
+					"filename": "violete_bariere_07.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1333,7 +1270,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_13.png",
+					"filename": "violete_bariere_08.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1354,7 +1291,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_14.png",
+					"filename": "violete_bariere_09.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1375,7 +1312,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_15.png",
+					"filename": "violete_bariere_10.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1396,7 +1333,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_16.png",
+					"filename": "violete_bariere_11.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1417,7 +1354,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_17.png",
+					"filename": "violete_bariere_12.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1438,7 +1375,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_18.png",
+					"filename": "violete_bariere_13.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1459,7 +1396,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_19.png",
+					"filename": "violete_bariere_14.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1480,7 +1417,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_20.png",
+					"filename": "violete_bariere_15.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1501,7 +1438,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_21.png",
+					"filename": "violete_bariere_16.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1522,7 +1459,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_22.png",
+					"filename": "violete_bariere_17.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1543,7 +1480,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile000.png",
+					"filename": "violete_bariere_18.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1564,7 +1501,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile001.png",
+					"filename": "violete_bariere_19.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1585,7 +1522,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile002.png",
+					"filename": "violete_bariere_20.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1606,7 +1543,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile003.png",
+					"filename": "violete_bariere_21.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1627,7 +1564,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile004.png",
+					"filename": "tile000.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1648,7 +1585,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile005.png",
+					"filename": "tile001.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1669,7 +1606,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile006.png",
+					"filename": "tile002.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1690,7 +1627,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile007.png",
+					"filename": "tile003.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1711,7 +1648,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile008.png",
+					"filename": "tile004.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1732,7 +1669,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile009.png",
+					"filename": "tile005.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1753,7 +1690,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile010.png",
+					"filename": "tile006.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1774,7 +1711,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile011.png",
+					"filename": "tile007.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1795,7 +1732,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile012.png",
+					"filename": "tile008.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1816,7 +1753,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile013.png",
+					"filename": "tile009.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1837,7 +1774,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile017.png",
+					"filename": "tile010.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1858,7 +1795,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile018.png",
+					"filename": "tile011.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1879,7 +1816,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile020.png",
+					"filename": "tile012.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1900,7 +1837,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile021.png",
+					"filename": "tile013.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1921,7 +1858,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile022.png",
+					"filename": "tile017.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1942,7 +1879,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile024.png",
+					"filename": "tile018.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1963,7 +1900,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile025.png",
+					"filename": "tile020.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1984,7 +1921,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile026.png",
+					"filename": "tile021.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2005,7 +1942,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile027.png",
+					"filename": "tile022.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2026,7 +1963,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile028.png",
+					"filename": "tile024.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2047,7 +1984,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile029.png",
+					"filename": "tile025.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2068,7 +2005,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile030.png",
+					"filename": "tile026.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2089,7 +2026,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile031.png",
+					"filename": "tile027.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2110,7 +2047,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile032.png",
+					"filename": "tile028.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2131,7 +2068,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile033.png",
+					"filename": "tile029.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2152,7 +2089,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile035.png",
+					"filename": "tile030.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2173,7 +2110,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile036.png",
+					"filename": "tile031.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2194,7 +2131,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile037.png",
+					"filename": "tile032.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2215,7 +2152,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile041.png",
+					"filename": "tile033.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2236,7 +2173,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile044.png",
+					"filename": "tile035.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2257,7 +2194,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile045.png",
+					"filename": "tile036.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2278,7 +2215,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile046.png",
+					"filename": "tile037.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2299,7 +2236,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile047.png",
+					"filename": "tile041.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2320,7 +2257,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile048.png",
+					"filename": "tile044.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2341,7 +2278,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile049.png",
+					"filename": "tile045.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2362,7 +2299,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile050.png",
+					"filename": "tile046.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2383,7 +2320,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile051.png",
+					"filename": "tile047.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2404,7 +2341,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile052.png",
+					"filename": "tile048.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2425,7 +2362,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile053.png",
+					"filename": "tile049.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2446,7 +2383,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile054.png",
+					"filename": "tile050.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2467,7 +2404,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile055.png",
+					"filename": "tile051.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2488,7 +2425,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile056.png",
+					"filename": "tile052.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2509,7 +2446,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile057.png",
+					"filename": "tile053.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2530,7 +2467,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile060.png",
+					"filename": "tile054.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2551,7 +2488,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile061.png",
+					"filename": "tile055.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2572,7 +2509,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/bariers/violete_bariere_02.png",
+					"filename": "tile056.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2593,7 +2530,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile063.png",
+					"filename": "tile057.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2614,7 +2551,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile068.png",
+					"filename": "tile060.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2635,7 +2572,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile069.png",
+					"filename": "violete_bariere_01.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2656,7 +2593,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile070.png",
+					"filename": "tile062.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2677,7 +2614,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile071.png",
+					"filename": "tile063.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2698,7 +2635,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile072.png",
+					"filename": "tile068.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2719,7 +2656,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile073.png",
+					"filename": "tile069.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2740,7 +2677,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile074.png",
+					"filename": "tile070.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2761,7 +2698,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile075.png",
+					"filename": "tile071.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2782,7 +2719,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile076.png",
+					"filename": "tile072.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2803,7 +2740,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile077.png",
+					"filename": "tile073.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2824,7 +2761,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile078.png",
+					"filename": "tile074.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2845,7 +2782,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile079.png",
+					"filename": "tile075.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2866,7 +2803,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile080.png",
+					"filename": "tile076.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2887,7 +2824,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile081.png",
+					"filename": "tile077.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2908,7 +2845,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile082.png",
+					"filename": "tile078.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2929,7 +2866,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile083.png",
+					"filename": "tile079.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2950,7 +2887,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile084.png",
+					"filename": "tile080.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2971,7 +2908,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile096.png",
+					"filename": "tile081.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2992,7 +2929,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile097.png",
+					"filename": "tile082.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3013,7 +2950,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile098.png",
+					"filename": "tile083.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3034,7 +2971,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile099.png",
+					"filename": "tile084.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3055,7 +2992,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile100.png",
+					"filename": "tile096.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3076,7 +3013,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile101.png",
+					"filename": "tile097.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3097,7 +3034,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile102.png",
+					"filename": "tile098.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3118,7 +3055,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile103.png",
+					"filename": "tile099.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3139,7 +3076,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile104.png",
+					"filename": "tile100.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3160,7 +3097,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile105.png",
+					"filename": "tile101.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3181,7 +3118,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile106.png",
+					"filename": "tile102.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3202,7 +3139,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile107.png",
+					"filename": "tile103.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3223,7 +3160,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile108.png",
+					"filename": "tile104.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3244,7 +3181,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile111.png",
+					"filename": "tile105.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3265,7 +3202,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile120.png",
+					"filename": "tile106.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3286,7 +3223,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile121.png",
+					"filename": "tile107.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3307,7 +3244,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile122.png",
+					"filename": "tile108.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3328,7 +3265,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile123.png",
+					"filename": "tile111.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3349,7 +3286,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile124.png",
+					"filename": "tile120.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3370,7 +3307,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile125.png",
+					"filename": "tile121.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3391,7 +3328,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile126.png",
+					"filename": "tile122.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3412,7 +3349,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile127.png",
+					"filename": "tile123.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3433,7 +3370,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile128.png",
+					"filename": "tile124.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3454,7 +3391,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile129.png",
+					"filename": "tile125.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3475,7 +3412,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile130.png",
+					"filename": "tile126.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3496,7 +3433,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile131.png",
+					"filename": "tile127.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3517,7 +3454,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile132.png",
+					"filename": "tile128.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3538,7 +3475,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile133.png",
+					"filename": "tile129.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3559,7 +3496,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile144.png",
+					"filename": "tile130.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3580,7 +3517,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile145.png",
+					"filename": "tile131.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3601,7 +3538,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile146.png",
+					"filename": "tile132.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3622,7 +3559,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile147.png",
+					"filename": "tile133.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3643,7 +3580,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile148.png",
+					"filename": "tile144.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3664,7 +3601,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile149.png",
+					"filename": "tile145.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3685,7 +3622,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile151.png",
+					"filename": "tile146.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3706,7 +3643,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile152.png",
+					"filename": "tile147.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3727,7 +3664,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile153.png",
+					"filename": "tile148.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3748,7 +3685,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile154.png",
+					"filename": "tile149.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3769,7 +3706,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile155.png",
+					"filename": "tile151.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3790,7 +3727,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile156.png",
+					"filename": "tile152.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3811,7 +3748,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile157.png",
+					"filename": "tile153.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3832,7 +3769,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile168.png",
+					"filename": "tile154.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3853,7 +3790,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile169.png",
+					"filename": "tile155.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3874,7 +3811,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile170.png",
+					"filename": "tile156.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3895,7 +3832,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile171.png",
+					"filename": "tile157.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3916,7 +3853,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile172.png",
+					"filename": "tile168.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3937,7 +3874,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile173.png",
+					"filename": "tile169.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3958,7 +3895,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile174.png",
+					"filename": "tile170.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3979,7 +3916,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile176.png",
+					"filename": "tile171.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4000,7 +3937,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile192.png",
+					"filename": "tile172.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4021,7 +3958,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile193.png",
+					"filename": "tile173.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4042,7 +3979,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile194.png",
+					"filename": "tile174.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4063,7 +4000,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile195.png",
+					"filename": "tile176.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4084,7 +4021,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile196.png",
+					"filename": "tile192.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4105,7 +4042,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile197.png",
+					"filename": "tile193.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4126,7 +4063,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile198.png",
+					"filename": "tile194.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4147,7 +4084,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile199.png",
+					"filename": "tile195.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4168,7 +4105,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile200.png",
+					"filename": "tile196.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4189,7 +4126,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile201.png",
+					"filename": "tile197.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4210,7 +4147,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile202.png",
+					"filename": "tile198.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4231,7 +4168,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile203.png",
+					"filename": "tile199.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4252,7 +4189,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile204.png",
+					"filename": "tile200.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4273,7 +4210,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile216.png",
+					"filename": "tile201.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4294,7 +4231,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile217.png",
+					"filename": "tile202.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4315,7 +4252,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile218.png",
+					"filename": "tile203.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4336,7 +4273,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile220.png",
+					"filename": "tile204.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4357,7 +4294,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile221.png",
+					"filename": "tile216.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4378,7 +4315,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile222.png",
+					"filename": "tile217.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4399,7 +4336,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile223.png",
+					"filename": "tile218.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4420,7 +4357,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile224.png",
+					"filename": "tile220.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4441,7 +4378,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile225.png",
+					"filename": "tile221.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4462,7 +4399,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile226.png",
+					"filename": "tile222.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4483,7 +4420,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile227.png",
+					"filename": "tile223.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4504,7 +4441,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile228.png",
+					"filename": "tile224.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4525,7 +4462,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile240.png",
+					"filename": "tile225.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4546,7 +4483,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile241.png",
+					"filename": "tile226.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4567,7 +4504,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile242.png",
+					"filename": "tile227.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4588,7 +4525,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile243.png",
+					"filename": "tile228.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4609,7 +4546,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile244.png",
+					"filename": "tile240.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4630,7 +4567,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile245.png",
+					"filename": "tile241.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4651,7 +4588,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile246.png",
+					"filename": "tile242.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4672,7 +4609,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile247.png",
+					"filename": "tile243.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4693,7 +4630,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile248.png",
+					"filename": "tile244.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4714,7 +4651,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile249.png",
+					"filename": "tile245.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4735,7 +4672,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile250.png",
+					"filename": "tile246.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4756,7 +4693,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile251.png",
+					"filename": "tile247.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4777,7 +4714,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile252.png",
+					"filename": "tile248.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4798,7 +4735,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile253.png",
+					"filename": "tile249.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4819,7 +4756,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile254.png",
+					"filename": "tile250.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4840,7 +4777,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile264.png",
+					"filename": "tile251.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4861,7 +4798,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile265.png",
+					"filename": "tile252.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4882,7 +4819,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile266.png",
+					"filename": "tile253.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4903,7 +4840,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile268.png",
+					"filename": "tile254.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4924,7 +4861,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile269.png",
+					"filename": "tile264.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4945,7 +4882,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile270.png",
+					"filename": "tile265.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4966,7 +4903,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile271.png",
+					"filename": "tile266.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -4987,7 +4924,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile272.png",
+					"filename": "tile268.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -5008,7 +4945,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile273.png",
+					"filename": "tile269.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -5029,7 +4966,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile274.png",
+					"filename": "tile270.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -5050,7 +4987,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile275.png",
+					"filename": "tile271.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -5071,7 +5008,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile276.png",
+					"filename": "tile272.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -5092,7 +5029,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile277.png",
+					"filename": "tile273.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -5113,7 +5050,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/tiles/tile278.png",
+					"filename": "tile274.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -5128,6 +5065,90 @@
 					},
 					"frame": {
 						"x": 0,
+						"y": 272,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "tile275.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 16,
+						"y": 272,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "tile276.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 32,
+						"y": 272,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "tile277.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 48,
+						"y": 272,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "tile061.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 64,
 						"y": 272,
 						"w": 16,
 						"h": 16
