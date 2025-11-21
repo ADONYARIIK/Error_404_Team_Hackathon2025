@@ -1,0 +1,40 @@
+{
+	"textures": [
+		{
+			"image": "gui_spritesheet",
+			"format": "RGBA8888",
+			"size": {
+				"w": 32,
+				"h": 32
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "assets/sprites/gui/healthBar.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7"
+	}
+}
