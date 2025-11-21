@@ -5,12 +5,12 @@
 			"format": "RGBA8888",
 			"size": {
 				"w": 2080,
-				"h": 2948
+				"h": 1924
 			},
 			"scale": 1,
 			"frames": [
 				{
-					"filename": "assets/sprites/gui/bg.png",
+					"filename": "gui/bg.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -31,7 +31,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/gui/cloudBigSize.png",
+					"filename": "gui/cloudBigSize.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -52,7 +52,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/gui/gameName.png",
+					"filename": "gui/gameName.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -73,28 +73,7 @@
 					}
 				},
 				{
-					"filename": "assets/sprites/gui/logo.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 1024,
-						"h": 1024
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 1024,
-						"h": 1024
-					},
-					"frame": {
-						"x": 0,
-						"y": 1924,
-						"w": 1024,
-						"h": 1024
-					}
-				},
-				{
-					"filename": "assets/sprites/gui/healthBar.png",
+					"filename": "gui/healthBar.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
