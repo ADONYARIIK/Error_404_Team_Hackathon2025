@@ -31,5 +31,8 @@ export default class BootScene extends Phaser.Scene {
         WebFont.load({
             google: { families: ['Jacquard 12'] }
         });
+
+        this.load.tilemapTiledJSON('test', './src/assets/maps/testLevel.json');
+        this.load.image('tiles', './src/assets/tilesets/tiles.png');
     }
 }
