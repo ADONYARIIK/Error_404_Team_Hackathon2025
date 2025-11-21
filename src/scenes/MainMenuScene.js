@@ -41,7 +41,7 @@ export default class MainMenuScene extends Phaser.Scene {
                 button[1].setVisible(true);
                 this.outAnimation();
                 setTimeout(() => {
-                    this.scene.start('UIScene');
+                    this.scene.start('GameScene');
                 }, 1000)
             });
         })

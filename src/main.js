@@ -7,8 +7,8 @@ import AuthorsScene from './scenes/AuthorsScene';
 
 const config = {
     type: Phaser.AUTO,
-    width: 1600,
-    height: 900,
+    width: 1120,
+    height: 640,
     backgroundColor: '0xba6aa7',
     parent: 'game-container',
     scale: {

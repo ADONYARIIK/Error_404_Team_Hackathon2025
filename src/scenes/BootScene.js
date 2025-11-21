@@ -42,6 +42,6 @@ export default class BootScene extends Phaser.Scene {
         this.load.audio('theme', './src/assets/audio/music/Embient.mp3')
 
         this.load.tilemapTiledJSON('level1', './src/assets/maps/level1.json');
-        this.load.image('tiles', './src/assets/tilesets/tiles.png');
+        this.load.image('tiles', './src/assets/maps/tilesets/tiles.png');
     }
 }
