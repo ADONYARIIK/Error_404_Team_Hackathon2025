@@ -4,11 +4,95 @@
 			"image": "gui_spritesheet",
 			"format": "RGBA8888",
 			"size": {
-				"w": 32,
-				"h": 32
+				"w": 2080,
+				"h": 2948
 			},
 			"scale": 1,
 			"frames": [
+				{
+					"filename": "assets/sprites/gui/bg.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1600,
+						"h": 900
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1600,
+						"h": 900
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 1600,
+						"h": 900
+					}
+				},
+				{
+					"filename": "assets/sprites/gui/cloudBigSize.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1024,
+						"h": 1024
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1024,
+						"h": 1024
+					},
+					"frame": {
+						"x": 0,
+						"y": 900,
+						"w": 1024,
+						"h": 1024
+					}
+				},
+				{
+					"filename": "assets/sprites/gui/gameName.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1024,
+						"h": 1024
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1024,
+						"h": 1024
+					},
+					"frame": {
+						"x": 1024,
+						"y": 900,
+						"w": 1024,
+						"h": 1024
+					}
+				},
+				{
+					"filename": "assets/sprites/gui/logo.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1024,
+						"h": 1024
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1024,
+						"h": 1024
+					},
+					"frame": {
+						"x": 0,
+						"y": 1924,
+						"w": 1024,
+						"h": 1024
+					}
+				},
 				{
 					"filename": "assets/sprites/gui/healthBar.png",
 					"rotated": false,
@@ -24,7 +108,7 @@
 						"h": 32
 					},
 					"frame": {
-						"x": 0,
+						"x": 2048,
 						"y": 0,
 						"w": 32,
 						"h": 32

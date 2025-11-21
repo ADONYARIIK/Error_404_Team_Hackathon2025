@@ -1,0 +1,61 @@
+{
+	"textures": [
+		{
+			"image": "tiles",
+			"format": "RGBA8888",
+			"size": {
+				"w": 224,
+				"h": 320
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "tilesets/tiles.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 224,
+						"h": 208
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 224,
+						"h": 208
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 224,
+						"h": 208
+					}
+				},
+				{
+					"filename": "tilesets/bariers.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 112
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 112
+					},
+					"frame": {
+						"x": 0,
+						"y": 208,
+						"w": 128,
+						"h": 112
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7"
+	}
+}
