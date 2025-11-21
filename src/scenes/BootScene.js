@@ -18,6 +18,13 @@ export default class BootScene extends Phaser.Scene {
         this.load.on('complete', () => {
             logo.destroy();
 
+            if (!this.registry.get('music')) {
+                const music = this.sound.add('theme', { loop: true, volume: 0.5 });
+                music.play();
+                this.registry.set('music', music);
+            }
+
+
             this.scene.start('MainMenuScene');
         })
 
