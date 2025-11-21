@@ -30,7 +30,7 @@ export default class MainMenuScene extends Phaser.Scene {
         })
 
 
-        const soundOn = this.add.image(1000, 400, 'icon1').setScale(4).setInteractive({ useHandCursor: true });
+        const soundOn = this.add.image(1000, 400, 'gui','icon1.png').setScale(4).setInteractive({ useHandCursor: true });
         soundOn.on('pointerover', () => {
             this.scaleUpBtn(soundOn, 4.5);
         });
@@ -39,7 +39,7 @@ export default class MainMenuScene extends Phaser.Scene {
         });
 
 
-        const soundOff = this.add.image(1000, 400, 'icon3').setScale(4).setVisible(false).setInteractive({ useHandCursor: true });
+        const soundOff = this.add.image(1000, 400, 'gui','icon3.png').setScale(4).setVisible(false).setInteractive({ useHandCursor: true });
         soundOff.on('pointerover', () => {
             this.scaleUpBtn(soundOff, 4.5);
         });
