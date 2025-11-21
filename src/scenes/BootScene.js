@@ -18,6 +18,13 @@ export default class BootScene extends Phaser.Scene {
         this.load.on('complete', () => {
             logo.destroy();
 
+            if (!this.registry.get('music')) {
+                const music = this.sound.add('theme', { loop: true, volume: 0.5 });
+                music.play();
+                this.registry.set('music', music);
+            }
+
+
             this.scene.start('MainMenuScene');
         })
 
@@ -32,11 +39,11 @@ export default class BootScene extends Phaser.Scene {
             google: { families: ['Jacquard 12'] }
         });
 
-        this.load.audio('theme', './src/assets/audio/music/cottagecore.mp3');
+        this.load.audio('theme', './src/assets/audio/music/Embient.mp3');
 
-        this.load.image('bg','./src/assets/newSprites/bg.png');
-        this.load.image('gameName','./src/assets/newSprites/gameName.png');
-        this.load.image('cloud','./src/assets/newSprites/cloud.png');
-        this.load.image('cloudBigSize','./src/assets/newSprites/cloudBigSize.png');
+        this.load.image('bg', './src/assets/newSprites/bg.png');
+        this.load.image('gameName', './src/assets/newSprites/gameName.png');
+        this.load.image('cloud', './src/assets/newSprites/cloud.png');
+        this.load.image('cloudBigSize', './src/assets/newSprites/cloudBigSize.png');
     }
 }
