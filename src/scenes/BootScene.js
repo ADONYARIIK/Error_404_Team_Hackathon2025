@@ -18,11 +18,9 @@ export default class BootScene extends Phaser.Scene {
         this.load.on('complete', () => {
             logo.destroy();
 
-            if (!this.registry.get('music')) {
-                const music = this.sound.add('theme', { loop: true, volume: 0.5 });
-                music.play();
-                this.registry.set('music', music);
-            }
+            const music = this.sound.add('theme', { loop: true, volume: 0.5 });
+            music.play();
+            this.registry.set('music', music);
 
 
             this.scene.start('MainMenuScene');
@@ -38,7 +36,7 @@ export default class BootScene extends Phaser.Scene {
         WebFont.load({
             google: { families: ['Jacquard 12'] }
         });
-
+        this.load.audio('theme', './src/assets/audio/music/Embient.mp3');
         // this.load.tilemapTiledJSON('level1', './src/assets/maps/testLevel.json');
         // this.load.image('tiles', './src/assets/tilesets/tiles.png');
     }
