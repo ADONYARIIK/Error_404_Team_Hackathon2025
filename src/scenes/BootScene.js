@@ -39,7 +39,7 @@ export default class BootScene extends Phaser.Scene {
             google: { families: ['Jacquard 12'] }
         });
 
-        this.load.tilemapTiledJSON('test', './src/assets/maps/testLevel.json');
-        this.load.image('tiles', './src/assets/tilesets/tiles.png');
+        // this.load.tilemapTiledJSON('level1', './src/assets/maps/testLevel.json');
+        // this.load.image('tiles', './src/assets/tilesets/tiles.png');
     }
 }
