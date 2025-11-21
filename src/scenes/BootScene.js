@@ -45,5 +45,9 @@ export default class BootScene extends Phaser.Scene {
         this.load.image('gameName', './src/assets/newSprites/gameName.png');
         this.load.image('cloud', './src/assets/newSprites/cloud.png');
         this.load.image('cloudBigSize', './src/assets/newSprites/cloudBigSize.png');
+        this.load.image('icon1', './src/assets/sprites/gui/icon1.png');
+        this.load.image('icon2', './src/assets/sprites/gui/icon2.png');
+        this.load.image('icon3', './src/assets/sprites/gui/icon3.png');
+        this.load.image('icon4', './src/assets/sprites/gui/icon4.png');
     }
 }

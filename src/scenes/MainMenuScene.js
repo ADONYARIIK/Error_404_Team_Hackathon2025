@@ -9,7 +9,7 @@ export default class MainMenuScene extends Phaser.Scene {
     }
 
     preload() {
-         this.music = this.registry.get('music');
+        this.music = this.registry.get('music');
     }
 
     create() {
@@ -29,7 +29,33 @@ export default class MainMenuScene extends Phaser.Scene {
             this.outAnimation();
         })
 
-        
+
+        const soundOn = this.add.image(1000, 400, 'icon1').setScale(4).setInteractive({ useHandCursor: true });
+        soundOn.on('pointerover', () => {
+            this.scaleUpBtn(soundOn, 4.5);
+        });
+        soundOn.on('pointerout', () => {
+            this.scaleDownBtn(soundOn, 4);
+        });
+
+
+        const soundOff = this.add.image(1000, 400, 'icon3').setScale(4).setVisible(false).setInteractive({ useHandCursor: true });
+        soundOff.on('pointerover', () => {
+            this.scaleUpBtn(soundOff, 4.5);
+        });
+        soundOff.on('pointerout', () => {
+            this.scaleDownBtn(soundOff, 4);
+        });
+
+
+        soundOn.on('pointerdown', () => {
+            soundOff.setVisible(true);
+            this.music.stop();
+            soundOff.on('pointerdown', () => {
+                soundOff.setVisible(false);
+                this.music.play();
+            })
+        })
 
     }
 
@@ -46,5 +72,22 @@ export default class MainMenuScene extends Phaser.Scene {
             })
 
         })
+    }
+
+     scaleUpBtn(obj, scale) {
+        this.tweens.add({
+            targets: obj,
+            scale: scale,
+            duration: 150,
+            ease: 'Power1'
+        });
+    }
+    scaleDownBtn(obj, scale) {
+        this.tweens.add({
+            targets: obj,
+            scale: scale,
+            duration: 150,
+            ease: 'Power2'
+        });
     }
 }
