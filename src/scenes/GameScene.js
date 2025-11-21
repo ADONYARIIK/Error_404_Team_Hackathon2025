@@ -21,7 +21,7 @@ export default class GameScene extends Phaser.Scene {
         const wallsLayer = level1.createLayer('Walls', tiles, 0, 0);
         const decorLayer = level1.createLayer('Decor', tiles, 0, 0);
 
-        const entities = loadTiledObjects(this, level1);
-        const triggers = loadTiledTriggerZones(this, level1);
+        // const entities = loadTiledObjects(this, level1);
+        // const triggers = loadTiledTriggerZones(this, level1);
     }
 }
