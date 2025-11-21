@@ -23,12 +23,17 @@ export default class MainMenuScene extends Phaser.Scene {
 
         ];
 
+        const authors = this.add.image(0,0,'gui','icon9.png')
+
+
         const button = [
             
             this.add.image(650, 700, 'gui', 'play.png').setOrigin(0).setScale(5).setInteractive({ useHandCursor: true }),
             this.add.image(650, 700, 'gui', 'play2.png').setOrigin(0).setScale(5).setInteractive({ useHandCursor: true }).setVisible(false)
 
         ];
+
+
 
         button.forEach((buttonchange) =>{
             buttonchange.on('pointerover', ()=>{
