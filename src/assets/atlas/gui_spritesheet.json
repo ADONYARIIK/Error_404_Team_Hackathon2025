@@ -5,12 +5,12 @@
 			"format": "RGBA8888",
 			"size": {
 				"w": 2112,
-				"h": 1924
+				"h": 2948
 			},
 			"scale": 1,
 			"frames": [
 				{
-					"filename": "bg.png",
+					"filename": "gui/bg.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -31,7 +31,7 @@
 					}
 				},
 				{
-					"filename": "gameName.png",
+					"filename": "gui/gameName.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -52,7 +52,7 @@
 					}
 				},
 				{
-					"filename": "cloudBigSize.png",
+					"filename": "gui/icon_group.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -73,7 +73,28 @@
 					}
 				},
 				{
-					"filename": "menu.png",
+					"filename": "gui/cloudBigSize.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1024,
+						"h": 1024
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1024,
+						"h": 1024
+					},
+					"frame": {
+						"x": 0,
+						"y": 1924,
+						"w": 1024,
+						"h": 1024
+					}
+				},
+				{
+					"filename": "gui/menu.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -94,7 +115,7 @@
 					}
 				},
 				{
-					"filename": "play2.png",
+					"filename": "gui/play.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -115,7 +136,7 @@
 					}
 				},
 				{
-					"filename": "play.png",
+					"filename": "gui/settings2.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -136,7 +157,7 @@
 					}
 				},
 				{
-					"filename": "settings2.png",
+					"filename": "gui/settings.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -157,7 +178,7 @@
 					}
 				},
 				{
-					"filename": "settings.png",
+					"filename": "gui/play2.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -178,7 +199,7 @@
 					}
 				},
 				{
-					"filename": "healthBar.png",
+					"filename": "gui/healthBar.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -199,7 +220,7 @@
 					}
 				},
 				{
-					"filename": "icon11.png",
+					"filename": "gui/icon11.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -220,28 +241,28 @@
 					}
 				},
 				{
-					"filename": "icon6.png",
+					"filename": "gui/icon7.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
 						"w": 14,
-						"h": 13
+						"h": 14
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 14,
-						"h": 13
+						"h": 14
 					},
 					"frame": {
 						"x": 1615,
 						"y": 15,
 						"w": 14,
-						"h": 13
+						"h": 14
 					}
 				},
 				{
-					"filename": "icon16.png",
+					"filename": "gui/icon2.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -262,49 +283,28 @@
 					}
 				},
 				{
-					"filename": "icon12.png",
+					"filename": "gui/icon13.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
 						"w": 14,
-						"h": 13
+						"h": 14
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 14,
-						"h": 13
+						"h": 14
 					},
 					"frame": {
 						"x": 1643,
 						"y": 15,
 						"w": 14,
-						"h": 13
-					}
-				},
-				{
-					"filename": "icon3.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 14
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 14
-					},
-					"frame": {
-						"x": 1657,
-						"y": 15,
-						"w": 14,
 						"h": 14
 					}
 				},
 				{
-					"filename": "icon4.png",
+					"filename": "gui/icon4.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -318,14 +318,14 @@
 						"h": 13
 					},
 					"frame": {
-						"x": 1615,
+						"x": 1629,
 						"y": 28,
 						"w": 14,
 						"h": 13
 					}
 				},
 				{
-					"filename": "icon5.png",
+					"filename": "gui/icon5.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -346,49 +346,7 @@
 					}
 				},
 				{
-					"filename": "icon14.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 13
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 13
-					},
-					"frame": {
-						"x": 1629,
-						"y": 28,
-						"w": 14,
-						"h": 13
-					}
-				},
-				{
-					"filename": "icon7.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 14
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 14
-					},
-					"frame": {
-						"x": 1643,
-						"y": 28,
-						"w": 14,
-						"h": 14
-					}
-				},
-				{
-					"filename": "icon8.png",
+					"filename": "gui/icon6.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -403,34 +361,13 @@
 					},
 					"frame": {
 						"x": 1614,
-						"y": 41,
+						"y": 29,
 						"w": 14,
 						"h": 13
 					}
 				},
 				{
-					"filename": "icon9.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 13
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 13
-					},
-					"frame": {
-						"x": 1600,
-						"y": 43,
-						"w": 14,
-						"h": 13
-					}
-				},
-				{
-					"filename": "icon13.png",
+					"filename": "gui/icon15.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -444,77 +381,35 @@
 						"h": 14
 					},
 					"frame": {
-						"x": 1628,
-						"y": 41,
-						"w": 14,
-						"h": 14
-					}
-				},
-				{
-					"filename": "icon10.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 14
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 14
-					},
-					"frame": {
-						"x": 1614,
-						"y": 54,
-						"w": 14,
-						"h": 14
-					}
-				},
-				{
-					"filename": "icon1.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 14
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 14
-					},
-					"frame": {
-						"x": 1600,
-						"y": 56,
-						"w": 14,
-						"h": 14
-					}
-				},
-				{
-					"filename": "icon15.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 14
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 14
-					},
-					"frame": {
-						"x": 1671,
+						"x": 1657,
 						"y": 15,
 						"w": 14,
 						"h": 14
 					}
 				},
 				{
-					"filename": "icon2.png",
+					"filename": "gui/icon8.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 13
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 13
+					},
+					"frame": {
+						"x": 1671,
+						"y": 15,
+						"w": 14,
+						"h": 13
+					}
+				},
+				{
+					"filename": "gui/icon9.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -532,6 +427,132 @@
 						"y": 15,
 						"w": 14,
 						"h": 13
+					}
+				},
+				{
+					"filename": "gui/icon12.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 13
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 13
+					},
+					"frame": {
+						"x": 1699,
+						"y": 15,
+						"w": 14,
+						"h": 13
+					}
+				},
+				{
+					"filename": "gui/icon14.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 13
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 13
+					},
+					"frame": {
+						"x": 1713,
+						"y": 15,
+						"w": 14,
+						"h": 13
+					}
+				},
+				{
+					"filename": "gui/icon10.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 14
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 14
+					},
+					"frame": {
+						"x": 1727,
+						"y": 15,
+						"w": 14,
+						"h": 14
+					}
+				},
+				{
+					"filename": "gui/icon1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 14
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 14
+					},
+					"frame": {
+						"x": 1671,
+						"y": 28,
+						"w": 14,
+						"h": 14
+					}
+				},
+				{
+					"filename": "gui/icon16.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 13
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 13
+					},
+					"frame": {
+						"x": 1643,
+						"y": 29,
+						"w": 14,
+						"h": 13
+					}
+				},
+				{
+					"filename": "gui/icon3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 14
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 14
+					},
+					"frame": {
+						"x": 1657,
+						"y": 29,
+						"w": 14,
+						"h": 14
 					}
 				}
 			]
