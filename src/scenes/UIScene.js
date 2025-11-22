@@ -10,8 +10,8 @@ export default class UIScene extends Phaser.Scene {
     }
 
     create() {
-        this.add.image(50,0,'gui','healthBar.png').setOrigin(0).setScale(3);
-        const healthBar = this.add.rectangle(105,48,55,10,0x5F1818,)
+        this.add.image(0,0,'gui','healthBar.png').setOrigin(0).setScale(3);
+        const healthBar = this.add.rectangle(54,47,56,11,0x5F1818,)
 
         const game = this.add.image(0,0,'gui','gameName.png').setOrigin(0).setScale(0.5).setInteractive({useHandCursor: true});
 
