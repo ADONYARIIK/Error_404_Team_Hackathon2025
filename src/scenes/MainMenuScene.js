@@ -54,10 +54,10 @@ export default class MainMenuScene extends Phaser.Scene {
 
         const button = [
 
-            this.add.image(550,440, 'gui', 'play.png').setOrigin(0.5)
+            this.add.image(550, 440, 'gui', 'play.png').setOrigin(0.5)
                 .setScale(5)
                 .setInteractive({ useHandCursor: true }),
-            this.add.image(550,440, 'gui', 'play2.png').setOrigin(0.5)
+            this.add.image(550, 440, 'gui', 'play2.png').setOrigin(0.5)
                 .setScale(5)
                 .setInteractive({ useHandCursor: true }).setVisible(false)
 
