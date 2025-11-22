@@ -100,7 +100,7 @@ export default class MainMenuScene extends Phaser.Scene {
             buttonchange.on('pointerdown', () => {
                 settings[1].setVisible(true);
 
-                this.scene.start('SettingsScene');
+                this.scene.start('UIScene');
 
             });
         })
