@@ -34,7 +34,7 @@ export default class MainMenuScene extends Phaser.Scene {
 
         ];
 
-        const authors = this.add.image(200, 520, 'iconGroup').setScale(0.1)
+        const authors = this.add.image(200, 520, 'gui', 'icon_group.png').setScale(0.1)
             .setTintFill(0xffffff)
             .setInteractive({ useHandCursor: true });
 
@@ -54,10 +54,10 @@ export default class MainMenuScene extends Phaser.Scene {
 
         const button = [
 
-            this.add.image(550,440, 'gui', 'play.png').setOrigin(0.5)
+            this.add.image(550, 440, 'gui', 'play.png').setOrigin(0.5)
                 .setScale(5)
                 .setInteractive({ useHandCursor: true }),
-            this.add.image(550,440, 'gui', 'play2.png').setOrigin(0.5)
+            this.add.image(550, 440, 'gui', 'play2.png').setOrigin(0.5)
                 .setScale(5)
                 .setInteractive({ useHandCursor: true }).setVisible(false)
 
