@@ -27,9 +27,17 @@ export function createEnemy(scene, x, y, type = 'zombie') {
         initialFrame = enemyFrame;
     }
 
-    const enemy = new Enemy(scene, x, y, type);
+    // Убедимся, что тип правильно установлен
+    const enemyType = type && type !== '' ? type : 'zombie';
+
+    const enemy = new Enemy(scene, x, y, enemyType);
     enemy.class = 'enemy';
-    enemy.name = type;
+    enemy.name = enemyType;
+
+    // Также установим тип объекта для альтернативного поиска
+    enemy.type = 'enemy';
+
+    console.log(`Created enemy: ${enemyType} at (${x}, ${y})`);
 
     return enemy;
 }
@@ -43,7 +51,7 @@ export function createCollectable(scene, x, y, name) {
 
         const frameMapping = {
             'medkit': 'medicine.png',
-            'fogeRemove': 'key_01.png',
+            'fogeRemove': 'diamond_01.png',
             'exit': 'tile033.png',
         };
 
@@ -61,7 +69,7 @@ export function createCollectable(scene, x, y, name) {
     } else if (name.includes('fogeRemove')) {
         collectable.collectType = 'fog_remover';
         collectable.value = 1;
-        collectable.setFrame('key_01.png');
+        collectable.setFrame('diamond_01.png');
     } else if (name.includes('exit')) {
         collectable.collectType = 'exit';
         collectable.value = 0;
@@ -76,7 +84,7 @@ export function createCollectable(scene, x, y, name) {
 
     scene.tweens.add({
         targets: collectable,
-        y: collectable.y - 10,
+        y: collectable.y -5,
         duration: 1000,
         ease: 'Sine.easeInOut',
         yoyo: true,
@@ -95,7 +103,7 @@ export function spawnBarier(scene, x, y, atlas, name, direction, length) {
     if (direction === 'Left' || direction === 'Right') {
         barrier.displayWidth = (length || 1) * 16;
         barrier.displayHeight = 16;
-        barrier.setOrigin(0, 0.5);
+        barrier.setRotation(0, 0.5);
     } else if (direction === 'Up' || direction === 'Down') {
         barrier.displayHeight = (length || 2) * 16;
         barrier.displayWidth = 16;
@@ -119,6 +127,11 @@ export function processSpawnZone(scene, map, spawnObject) {
     }));
 
     const spawnPolygon = new Phaser.Geom.Polygon(points);
+
+    // Исправляем ошибку - переменная graphics не определена
+    const graphics = scene.add.graphics();
+    graphics.lineStyle(2, 0x00ff00, 0.5);
+    graphics.strokePoints(spawnPolygon.points, true);
 
     return {
         polygon: spawnPolygon,

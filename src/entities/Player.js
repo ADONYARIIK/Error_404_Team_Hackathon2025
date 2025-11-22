@@ -7,14 +7,35 @@ export default class Player extends Phaser.GameObjects.Sprite {
 
         this.currentDirection = 'front';
         this.currentAction = 'idle';
-        this.speed = 3;
+        this.speed = scene.registry.get('playerSpeed') || 3;
         this.isAlive = true;
 
-        this.playIdle();
+        this.health = scene.registry.get('playerHealth') || 100;
+        this.maxHealth = scene.registry.get('playerMaxHealth') || 100;
+        this.score = scene.registry.get('scores') || 0;
 
-        this.health = 100;
-        this.maxHealth = 100;
-        this.score = 0;
+        this.playIdle();
+    }
+
+    // Удаляем старый метод move и заменяем его на методы для управления анимациями
+
+    takeDamage(amount) {
+        if (!this.isAlive) return;
+
+        this.health = Math.max(0, this.health - amount);
+
+        this.setTint(0xff0000);
+        this.scene.time.delayedCall(200, () => {
+            this.clearTint();
+        });
+
+        this.scene.events.emit('playerHealthChanged', this.health);
+
+        if (this.health <= 0) {
+            this.die();
+        }
+
+        return this.health;
     }
 
     playIdle() {
@@ -130,29 +151,13 @@ export default class Player extends Phaser.GameObjects.Sprite {
         return moving;
     }
 
-    takeDamage(amount) {
-        if (!this.isAlive) return;
-
-        this.health = Math.max(0, this.health - amount);
-
-        this.setTint(0xff0000);
-        this.scene.time.delayedCall(200, () => {
-            this.clearTint();
-        });
-
-        if (this.health <= 0) {
-            this.die();
-        }
-
-        return this.health;
-    }
-
     die() {
         if (!this.isAlive) return;
 
         this.isAlive = false;
         this.playDeath();
 
+        // Эмитим событие смерти игрока
         this.scene.events.emit('playerDied');
     }
 
