@@ -8,7 +8,7 @@ export default class AuthorsScene extends Phaser.Scene {
     create() {
         this.add.image(0, 0, 'gui', 'bg.png').setOrigin(0).setScale(0.71);
 
-        const exit = this.add.image(20, 10, 'gui', "icon13.png").setOrigin(0)
+        const exit = this.add.image(50, 40, 'gui', "icon13.png").setOrigin(0.5)
             .setScale(3.5)
             .setInteractive({ useHandCursor: true });
 

@@ -15,20 +15,20 @@ export default class MainMenuScene extends Phaser.Scene {
     create() {
         this.add.image(0, 0, 'gui', 'bg.png').setOrigin(0).setScale(0.71)
 
-        this.add.image(330, 0, 'gui', 'gameName.png').setOrigin(0).setScale(0.5);
+        this.add.image(330, -100, 'gui', 'gameName.png').setOrigin(0).setScale(0.5);
 
 
         this.clouds = [
-            this.add.image(250, 0, 'gui', 'cloudBigSize.png').setOrigin(0)
+            this.add.image(250, -100, 'gui', 'cloudBigSize.png').setOrigin(0)
                 .setScale(0.4)
                 .setAlpha(0.5),
-            this.add.image(250, 100, 'gui', 'cloudBigSize.png').setOrigin(0)
+            this.add.image(250, 0, 'gui', 'cloudBigSize.png').setOrigin(0)
+                .setScale(0.4)
+                .setAlpha(0.7),
+            this.add.image(450, -100, 'gui', 'cloudBigSize.png').setOrigin(0)
                 .setScale(0.4)
                 .setAlpha(0.7),
             this.add.image(450, 0, 'gui', 'cloudBigSize.png').setOrigin(0)
-                .setScale(0.4)
-                .setAlpha(0.7),
-            this.add.image(450, 100, 'gui', 'cloudBigSize.png').setOrigin(0)
                 .setScale(0.4)
                 .setAlpha(0.5),
 
@@ -54,10 +54,10 @@ export default class MainMenuScene extends Phaser.Scene {
 
         const button = [
 
-            this.add.image(420, 500, 'gui', 'play.png').setOrigin(0)
+            this.add.image(550,440, 'gui', 'play.png').setOrigin(0.5)
                 .setScale(5)
                 .setInteractive({ useHandCursor: true }),
-            this.add.image(420, 500, 'gui', 'play2.png').setOrigin(0)
+            this.add.image(550,440, 'gui', 'play2.png').setOrigin(0.5)
                 .setScale(5)
                 .setInteractive({ useHandCursor: true }).setVisible(false)
 
@@ -76,6 +76,32 @@ export default class MainMenuScene extends Phaser.Scene {
                 setTimeout(() => {
                     this.scene.start('GameScene');
                 }, 1000)
+            });
+        })
+
+        const settings = [
+
+            this.add.image(550, 540, 'gui', 'settings.png').setOrigin(0.5)
+                .setScale(5)
+                .setInteractive({ useHandCursor: true }),
+            this.add.image(550, 540, 'gui', 'settings2.png').setOrigin(0.5)
+                .setScale(5)
+                .setInteractive({ useHandCursor: true }).setVisible(false)
+
+        ];
+
+        settings.forEach((buttonchange) => {
+            buttonchange.on('pointerover', () => {
+                this.scaleUpBtn(buttonchange, 5.5)
+            })
+            buttonchange.on('pointerout', () => {
+                this.scaleDownBtn(buttonchange, 5)
+            })
+            buttonchange.on('pointerdown', () => {
+                settings[1].setVisible(true);
+
+                this.scene.start('SettingsScene');
+
             });
         })
 
@@ -98,7 +124,7 @@ export default class MainMenuScene extends Phaser.Scene {
         soundOff.on('pointerover', () => {
             this.scaleUpBtn(soundOff, 5.5);
         });
-        
+
         soundOff.on('pointerout', () => {
             this.scaleDownBtn(soundOff, 6);
         });
