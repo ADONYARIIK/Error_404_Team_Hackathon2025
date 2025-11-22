@@ -8,7 +8,7 @@
     "/home/adonyarik/Рабочий стол/Error_404_Team_Hackathon2025/src/assets"
   ],
   "packOptions": {
-    "textureName": "gui_spritesheet",
+    "textureName": "spritesheet",
     "textureFormat": "png",
     "removeFileExtension": false,
     "prependFolderName": false,
