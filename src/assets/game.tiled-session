@@ -16,6 +16,7 @@
     "openFiles": [
     ],
     "project": "game.tiled-project",
+    "property.type": "bool",
     "recentFiles": [
     ]
 }

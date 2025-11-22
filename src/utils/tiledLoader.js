@@ -2,6 +2,8 @@ import { createPlayer, createEnemy, createCollectable, spawnBarier, processSpawn
 
 export function loadTiledEntities(scene, map) {
     const entitiesLayer = map.getObjectLayer('Objects').objects;
+    console.log('All objects in Objects layer:', entitiesLayer); // Отладочный вывод
+
     const entities = {};
 
     entitiesLayer.forEach(ent => {
@@ -10,21 +12,31 @@ export function loadTiledEntities(scene, map) {
             return acc;
         }, {});
 
+        console.log(`Processing entity: name=${ent.name}, type=${ent.type}, class=${ent.class}, x=${ent.x}, y=${ent.y}`); // Отладочный вывод
+
         let entity;
 
         if (ent.type === 'player') {
             entity = createPlayer(scene, ent.x, ent.y);
+            console.log('Created player entity');
         }
         else if (ent.type === 'enemy') {
             entity = createEnemy(scene, ent.x, ent.y, ent.name);
+            console.log(`Created enemy entity: ${ent.name}`);
         }
         else if (ent.type === 'collectable') {
             entity = createCollectable(scene, ent.x, ent.y, ent.name);
+            console.log(`Created collectable entity: ${ent.name}`);
+        } else {
+            console.log(`Unknown entity type: ${ent.type}`);
         }
 
-        entities[ent.name] = entity;
+        if (entity) {
+            entities[ent.name] = entity;
+        }
     });
 
+    console.log('Final entities object:', entities); // Отладочный вывод
     return entities;
 }
 

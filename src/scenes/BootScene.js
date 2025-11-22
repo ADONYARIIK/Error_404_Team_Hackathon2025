@@ -24,8 +24,18 @@ export default class BootScene extends Phaser.Scene {
                 this.registry.set('music', music);
             }
 
-            this.registry.set('hp', 100);
-            // this.scene.start('MainMenuScene');
+            this.registry.set('playerHealth', 100);
+            this.registry.set('playerMaxHealth', 100);
+            this.registry.set('playerSpeed', 3);
+            this.registry.set('enemySpeed', 0.8);
+            this.registry.set('kitHeal', 25);
+            this.registry.set('playerDamage', 20);
+            this.registry.set('enemyDamage', 10);
+            this.registry.set('enemyHealth', 30);
+            this.registry.set('scores', 0);
+            this.registry.set('fogRemovers', 0);
+            this.registry.set('level', 1);
+
             this.scene.start('MainMenuScene');
         })
 
