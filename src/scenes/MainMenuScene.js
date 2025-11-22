@@ -13,20 +13,53 @@ export default class MainMenuScene extends Phaser.Scene {
     }
 
     create() {
-        this.add.image(0, 0, 'gui', 'bg.png').setOrigin(0);
-        this.add.image(550, 0, 'gui', 'gameName.png').setOrigin(0).setScale(0.5);
+        this.add.image(0, 0, 'gui', 'bg.png').setOrigin(0).setScale(0.71)
+
+        this.add.image(330, -100, 'gui', 'gameName.png').setOrigin(0).setScale(0.5);
+
+
         this.clouds = [
-            this.add.image(500, 0, 'gui', 'cloudBigSize.png').setOrigin(0).setScale(0.4).setInteractive({ useHandCursor: true }).setAlpha(1),
-            this.add.image(500, 100, 'gui', 'cloudBigSize.png').setOrigin(0).setScale(0.4).setInteractive({ useHandCursor: true }).setAlpha(1),
-            this.add.image(650, 0, 'gui', 'cloudBigSize.png').setOrigin(0).setScale(0.4).setInteractive({ useHandCursor: true }).setAlpha(1),
-            this.add.image(650, 100, 'gui', 'cloudBigSize.png').setOrigin(0).setScale(0.4).setInteractive({ useHandCursor: true }).setAlpha(1),
+            this.add.image(250, -100, 'gui', 'cloudBigSize.png').setOrigin(0)
+                .setScale(0.4)
+                .setAlpha(0.5),
+            this.add.image(250, 0, 'gui', 'cloudBigSize.png').setOrigin(0)
+                .setScale(0.4)
+                .setAlpha(0.7),
+            this.add.image(450, -100, 'gui', 'cloudBigSize.png').setOrigin(0)
+                .setScale(0.4)
+                .setAlpha(0.7),
+            this.add.image(450, 0, 'gui', 'cloudBigSize.png').setOrigin(0)
+                .setScale(0.4)
+                .setAlpha(0.5),
 
         ];
 
+        const authors = this.add.image(200, 520, 'iconGroup').setScale(0.1)
+            .setTintFill(0xffffff)
+            .setInteractive({ useHandCursor: true });
+
+
+        authors.on('pointerover', () => {
+            this.scaleUpBtn(authors, 0.12)
+        })
+
+        authors.on('pointerout', () => {
+            this.scaleDownBtn(authors, 0.1)
+        })
+
+        authors.on('pointerdown', () => {
+            this.scene.start('AuthorsScene');
+        });
+
+
         const button = [
 
-            this.add.image(650, 700, 'gui', 'play.png').setOrigin(0).setScale(5).setInteractive({ useHandCursor: true }),
-            this.add.image(650, 700, 'gui', 'play2.png').setOrigin(0).setScale(5).setInteractive({ useHandCursor: true }).setVisible(false)
+            this.add.image(550,440, 'gui', 'play.png').setOrigin(0.5)
+                .setScale(5)
+                .setInteractive({ useHandCursor: true }),
+            this.add.image(550,440, 'gui', 'play2.png').setOrigin(0.5)
+                .setScale(5)
+                .setInteractive({ useHandCursor: true }).setVisible(false)
 
         ];
 
@@ -41,25 +74,57 @@ export default class MainMenuScene extends Phaser.Scene {
                 button[1].setVisible(true);
                 this.outAnimation();
                 setTimeout(() => {
-                    this.scene.start('UIScene');
+                    this.scene.start('GameScene');
                 }, 1000)
             });
         })
 
+        const settings = [
 
-        const soundOn = this.add.image(1200, 500, 'gui', 'icon1.png').setScale(6).setInteractive({ useHandCursor: true });
+            this.add.image(550, 540, 'gui', 'settings.png').setOrigin(0.5)
+                .setScale(5)
+                .setInteractive({ useHandCursor: true }),
+            this.add.image(550, 540, 'gui', 'settings2.png').setOrigin(0.5)
+                .setScale(5)
+                .setInteractive({ useHandCursor: true }).setVisible(false)
+
+        ];
+
+        settings.forEach((buttonchange) => {
+            buttonchange.on('pointerover', () => {
+                this.scaleUpBtn(buttonchange, 5.5)
+            })
+            buttonchange.on('pointerout', () => {
+                this.scaleDownBtn(buttonchange, 5)
+            })
+            buttonchange.on('pointerdown', () => {
+                settings[1].setVisible(true);
+
+                this.scene.start('UIScene');
+
+            });
+        })
+
+
+        const soundOn = this.add.image(1000, 520, 'gui', 'icon1.png').setScale(6).setInteractive({ useHandCursor: true });
+
         soundOn.on('pointerover', () => {
             this.scaleUpBtn(soundOn, 5.5);
         });
+
         soundOn.on('pointerout', () => {
             this.scaleDownBtn(soundOn, 6);
         });
 
 
-        const soundOff = this.add.image(1200, 500, 'gui', 'icon3.png').setScale(6).setVisible(false).setInteractive({ useHandCursor: true });
+        const soundOff = this.add.image(1000, 520, 'gui', 'icon3.png').setScale(6)
+            .setVisible(false)
+            .setInteractive({ useHandCursor: true });
+
         soundOff.on('pointerover', () => {
             this.scaleUpBtn(soundOff, 5.5);
         });
+
         soundOff.on('pointerout', () => {
             this.scaleDownBtn(soundOff, 6);
         });
