@@ -1,59 +1,25 @@
-// import Phaser from 'phaser';
-// import { loadTiledEntities, loadTiledTriggerZones, loadTiledBariers } from '../assets/utils/tiledLoader';
-
-// export default class GameScene extends Phaser.Scene {
-//     constructor() {
-//         super('GameScene');
-//         this.triggerZones = {};
-//         this.player = null;
-//         this.entities = {};
-//         this.bariers = {};
-//         this.collectables = [];
-//     }
-
-//     create() {
-//         this.scene.launch('UIScene');
-
-//         this.cameras.main.setZoom(2);
-//         const level1 = this.make.tilemap({ key: 'level1' });
-
-//         this.cameras.main.setBounds(0, 0, level1.widthInPixels, level1.heightInPixels);
-
-//         const tiles = level1.addTilesetImage('tiles', 'tiles');
-
-//         const backgroundLayer = level1.createLayer('Background', tiles, 0, 0);
-//         const wallsLayer = level1.createLayer('Walls', tiles, 0, 0);
-//         const decorLayer = level1.createLayer('Decor', tiles, 0, 0);
-
-//         // const entities = loadTiledObjects(this, level1);
-//         // const bariers = loadTiledBariers(this, level1);
-//         // const triggers = loadTiledTriggerZones(this, level1);
-//     }
-// }
-
 import Phaser from 'phaser';
-import { loadTiledEntities, loadTiledTriggerZones, loadTiledBariers } from '../assets/utils/tiledLoader';
+import { loadTiledEntities, loadTiledTriggerZones, loadTiledBariers } from '../utils/tiledLoader.js';
+import { AnimationsLoader } from '../utils/animationsLoader.js';
 
 export default class GameScene extends Phaser.Scene {
     constructor() {
         super('GameScene');
-        this.triggerZones = {};
         this.player = null;
-        this.entities = {};
-        this.bariers = {};
+        this.enemies = [];
         this.collectables = [];
-    }
-
-    preload() {
-        // Ваша загрузка ресурсов
+        this.bariers = [];
+        this.triggerZones = {};
+        this.cursors = null;
+        this.spaceKey = null;
+        this.shiftKey = null;
+        this.fogRemovers = 0;
     }
 
     create() {
-        this.scene.launch('UIScene');
+        AnimationsLoader.createAllAnimations(this);
 
-        this.cameras.main.setZoom(2);
         const level1 = this.make.tilemap({ key: 'level1' });
-
         this.cameras.main.setBounds(0, 0, level1.widthInPixels, level1.heightInPixels);
 
         const tiles = level1.addTilesetImage('tiles', 'tiles');
@@ -62,67 +28,119 @@ export default class GameScene extends Phaser.Scene {
         const wallsLayer = level1.createLayer('Walls', tiles, 0, 0);
         const decorLayer = level1.createLayer('Decor', tiles, 0, 0);
 
-        // Загружаем все объекты
-        this.entities = loadTiledEntities(this, level1);
-        this.triggerZones = loadTiledTriggerZones(this, level1);
+        const entities = loadTiledEntities(this, level1);
         this.bariers = loadTiledBariers(this, level1);
+        this.triggerZones = loadTiledTriggerZones(this, level1);
 
-        // Находим игрока среди сущностей
-        this.player = Object.values(this.entities).find(entity =>
+        this.player = Object.values(entities).find(entity =>
             entity && entity.class === 'player'
         );
 
-        // Собираем все собираемые предметы в отдельный массив для проверки коллизий
-        this.collectables = Object.values(this.entities).filter(entity =>
-            entity && entity.class === 'collect'
-        );
-
-        // Собираем всех врагов для проверки коллизий
-        this.enemies = Object.values(this.entities).filter(entity =>
+        this.enemies = Object.values(entities).filter(entity =>
             entity && entity.class === 'enemy'
         );
 
-        // Собираем все барьеры для проверки коллизий
-        this.allBariers = Object.values(this.bariers).filter(barrier =>
-            barrier && barrier.class === 'bariere'
+        this.collectables = Object.values(entities).filter(entity =>
+            entity && entity.class === 'collect'
         );
+
+        if (this.player) {
+            this.cameras.main.startFollow(this.player);
+            this.cameras.main.setZoom(2);
+        }
+
+        this.setupControls();
+
+        this.setupEvents();
     }
 
-    update() {
-        if (!this.player) return;
+    setupControls() {
+        this.cursors = this.input.keyboard.createCursorKeys();
 
-        // Проверяем триггерные зоны (дебаффы)
-        Object.values(this.triggerZones).forEach(zone => {
-            if (!zone.getData) return;
+        this.spaceKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+        this.shiftKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SHIFT);
 
-            const polygon = zone.getData('polygon');
-            const entered = zone.getData('entered');
-            const zoneClass = zone.getData('class');
+        this.wKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
+        this.aKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
+        this.sKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
+        this.dKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
+    }
 
-            if (Phaser.Geom.Polygon.ContainsPoint(polygon, this.player.x, this.player.y)) {
-                if (!entered) {
-                    zone.setData('entered', true);
-                    this.onZoneEnter(zone);
-                }
-            } else if (entered) {
-                zone.setData('entered', false);
-                this.onZoneExit(zone);
+    setupEvents() {
+        this.events.on('itemCollected', (collectable) => {
+            console.log('Item collected:', collectable.name);
+            if (this.player) {
+                this.player.addScore(10);
+                this.updateUI();
             }
         });
 
-        // Проверяем коллизии с собираемыми предметами
+        this.events.on('enemyDied', (enemy) => {
+            console.log('Enemy died:', enemy.name);
+            if (this.player) {
+                this.player.addScore(50);
+                this.updateUI();
+
+                const index = this.enemies.indexOf(enemy);
+                if (index > -1) {
+                    this.enemies.splice(index, 1);
+                }
+            }
+        });
+
+        this.events.on('playerDied', () => {
+            console.log('Player died!');
+            this.showGameOver();
+        });
+
+        this.events.on('playerHealthChanged', (health) => {
+            this.updateUI();
+        });
+    }
+
+    update() {
+        if (!this.player || !this.player.isAlive) return;
+
+        this.handlePlayerMovement();
+
+        this.handlePlayerAttacks();
+
+        this.updateEnemies();
+
         this.checkCollectableCollisions();
 
-        // Проверяем коллизии с врагами
-        this.checkEnemyCollisions();
+        this.checkTriggerZones();
 
-        // Проверяем коллизии с барьерами
-        this.checkBarrierCollisions();
+        this.checkEnemyCollisions();
+    }
+
+    handlePlayerMovement() {
+        const moving = this.player.move(
+            this.cursors.left.isDown || this.aKey.isDown,
+            this.cursors.right.isDown || this.dKey.isDown,
+            this.cursors.up.isDown || this.wKey.isDown,
+            this.cursors.down.isDown || this.sKey.isDown
+        );
+    }
+
+    handlePlayerAttacks() {
+        if (Phaser.Input.Keyboard.JustDown(this.spaceKey)) {
+            this.player.playShoot();
+        } else if (Phaser.Input.Keyboard.JustDown(this.shiftKey)) {
+            this.player.playStab();
+        }
+    }
+
+    updateEnemies() {
+        this.enemies.forEach(enemy => {
+            if (enemy.isAlive && this.player.isAlive) {
+                enemy.update(this.player);
+            }
+        });
     }
 
     checkCollectableCollisions() {
-        // Простая проверка коллизий по расстоянию
-        const collectRadius = 20; // Радиус сбора предмета
+        const collectRadius = 20;
 
         for (let i = this.collectables.length - 1; i >= 0; i--) {
             const collectable = this.collectables[i];
@@ -134,158 +152,132 @@ export default class GameScene extends Phaser.Scene {
             );
 
             if (distance < collectRadius) {
-                this.onCollect(this.player, collectable);
+                this.handleCollectable(collectable);
+                collectable.destroy();
                 this.collectables.splice(i, 1);
             }
         }
     }
 
+    handleCollectable(collectable) {
+        const collectType = collectable.collectType;
+
+        switch (collectType) {
+            case 'health':
+                if (this.player) {
+                    const oldHealth = this.player.health;
+                    this.player.heal(collectable.value);
+                    const healthGained = this.player.health - oldHealth;
+                    this.events.emit('itemCollected', collectable);
+                    this.showMessage(`+${healthGained} здоровья!`);
+                }
+                break;
+
+            case 'fog_remover':
+                this.fogRemovers++;
+                this.events.emit('itemCollected', collectable);
+                this.showMessage('Предмет для рассеивания тумана! Используйте F для удаления тумана');
+                break;
+
+            case 'exit':
+                this.events.emit('itemCollected', collectable);
+                this.showMessage('Выход найден! Уровень пройден!');
+                break;
+
+            default:
+                this.events.emit('itemCollected', collectable);
+                if (this.player) {
+                    this.player.addScore(10);
+                }
+                break;
+        }
+
+        this.updateUI();
+    }
+
+    checkTriggerZones() {
+        Object.values(this.triggerZones).forEach(zone => {
+            if (!zone.getData) return;
+
+            const polygon = zone.getData('polygon');
+            const entered = zone.getData('entered');
+            const properties = zone.getData('properties');
+
+            if (Phaser.Geom.Polygon.ContainsPoint(polygon, this.player.x, this.player.y)) {
+                if (!entered) {
+                    zone.setData('entered', true);
+                    this.onZoneEnter(zone);
+                }
+
+                if (this.scene.time.now > (this.lastFogDamage || 0)) {
+                    this.applyFogDamage(5);
+                    this.lastFogDamage = this.scene.time.now + 1000;
+                }
+            } else if (entered) {
+                zone.setData('entered', false);
+                this.onZoneExit(zone);
+            }
+        });
+    }
+
     checkEnemyCollisions() {
-        // Простая проверка коллизий с врагами
-        const enemyRadius = 25; // Радиус коллизии врага
+        const enemyRadius = 30;
 
         this.enemies.forEach(enemy => {
-            if (!enemy) return;
+            if (!enemy.isAlive || !this.player.isAlive) return;
 
             const distance = Phaser.Math.Distance.Between(
                 this.player.x, this.player.y,
                 enemy.x, enemy.y
             );
 
-            if (distance < enemyRadius) {
-                this.onEnemyPlayerCollision(enemy, this.player);
-            }
-        });
-    }
-
-    checkBarrierCollisions() {
-        // Простая проверка коллизий с барьерами
-        const barrierRadius = 20; // Радиус коллизии барьера
-
-        this.allBariers.forEach(barrier => {
-            if (!barrier) return;
-
-            const distance = Phaser.Math.Distance.Between(
-                this.player.x, this.player.y,
-                barrier.x, barrier.y
-            );
-
-            if (distance < barrierRadius) {
-                this.onBarrierCollision(barrier, this.player);
+            if (distance < enemyRadius && enemy.currentAction !== 'attack') {
+                enemy.attack(this.player);
             }
         });
     }
 
     onZoneEnter(zone) {
         const properties = zone.getData('properties');
-        const name = zone.getData('name');
-        const zoneClass = zone.getData('class');
+        console.log('Entered fog zone:', zone.getData('name'));
 
-        console.log(`Entered ${zoneClass} zone:`, name, properties);
+        this.player.speed *= 0.5;
 
-        // Обработка дебафф зон
-        if (zoneClass === 'debuff') {
-            this.applyDebuff(properties);
-        }
-
-        // Вызываем кастомные события
-        if (properties.onEnter) {
-            this.events.emit(properties.onEnter, zone);
-        }
-
-        // Показываем сообщение
-        if (properties.message) {
-            this.showMessage(properties.message);
-        }
+        this.showMessage('Вы в тумане! Замедление и получение урона');
     }
 
     onZoneExit(zone) {
-        const properties = zone.getData('properties');
-        const name = zone.getData('name');
-        const zoneClass = zone.getData('class');
+        console.log('Exited fog zone:', zone.getData('name'));
 
-        console.log(`Exited ${zoneClass} zone:`, name, properties);
+        this.player.speed *= 2;
+    }
 
-        // Снимаем дебафф
-        if (zoneClass === 'debuff') {
-            this.removeDebuff(properties);
-        }
-
-        if (properties.onExit) {
-            this.events.emit(properties.onExit, zone);
+    applyFogDamage(damage) {
+        if (this.player && this.player.isAlive) {
+            this.player.takeDamage(damage);
+            this.updateUI();
         }
     }
 
-    applyDebuff(properties) {
-        // Применяем эффекты дебаффа к игроку
-        // Например, замедление скорости движения
-        if (properties.slowDown) {
-            this.player.speedMultiplier = 0.5;
-        }
-
-        // Визуальный эффект
-        this.player.setTint(0xff0000);
-
-        if (properties.damageOverTime) {
-            // Запускаем периодический урон
-            this.debuffDamageTimer = this.time.addEvent({
-                delay: 1000, // Каждую секунду
-                callback: this.applyDebuffDamage,
-                callbackScope: this,
-                loop: true
+    updateUI() {
+        if (this.player) {
+            this.events.emit('updateUI', {
+                health: this.player.health,
+                maxHealth: this.player.maxHealth,
+                score: this.player.score,
+                fogRemovers: this.fogRemovers
             });
         }
     }
 
-    removeDebuff(properties) {
-        // Снимаем эффекты дебаффа
-        this.player.clearTint();
-        this.player.speedMultiplier = 1.0;
-
-        // Останавливаем таймер урона, если он был
-        if (this.debuffDamageTimer) {
-            this.debuffDamageTimer.remove();
-            this.debuffDamageTimer = null;
-        }
-    }
-
-    applyDebuffDamage() {
-        // Применяем урон от дебаффа
-        console.log('Taking debuff damage');
-        // this.player.health -= 1;
-        // this.events.emit('playerHealthChanged', this.player.health);
-    }
-
-    onEnemyPlayerCollision(enemy, player) {
-        // Обработка столкновения врага с игроком
-        console.log('Enemy collided with player');
-        // Ваша логика урона
-        // this.player.health -= 10;
-        // this.events.emit('playerHealthChanged', this.player.health);
-    }
-
-    onBarrierCollision(barrier, player) {
-        // Обработка столкновения с барьером
-        console.log('Player collided with barrier');
-        // Можно добавить отталкивание или другую логику
-    }
-
-    onCollect(player, collectable) {
-        // Обработка сбора предмета
-        console.log('Collected:', collectable.name);
-
-        // Удаляем предмет со сцены
-        collectable.destroy();
-
-        // Дополнительная логика (добавление очков и т.д.)
-        this.events.emit('itemCollected', collectable);
-    }
-
     showMessage(text) {
-        // Реализация показа сообщения
+        if (this.currentMessage) {
+            this.currentMessage.destroy();
+        }
+
         const message = this.add.text(
             this.cameras.main.centerX,
-            this.cameras.main.centerY - 50,
+            this.cameras.main.centerY - 100,
             text,
             {
                 fontSize: '16px',
@@ -295,10 +287,31 @@ export default class GameScene extends Phaser.Scene {
             }
         );
         message.setOrigin(0.5);
+        this.currentMessage = message;
 
-        // Автоматическое скрытие сообщения
         this.time.delayedCall(3000, () => {
-            message.destroy();
+            if (this.currentMessage === message) {
+                message.destroy();
+                this.currentMessage = null;
+            }
+        });
+    }
+
+    showGameOver() {
+        const gameOverText = this.add.text(
+            this.cameras.main.centerX,
+            this.cameras.main.centerY,
+            'GAME OVER\n\nScore: ' + (this.player ? this.player.score : 0) + '\n\nClick to restart',
+            {
+                fontSize: '32px',
+                fill: '#ff0000',
+                align: 'center'
+            }
+        );
+        gameOverText.setOrigin(0.5);
+
+        this.input.once('pointerdown', () => {
+            this.scene.restart();
         });
     }
 }
