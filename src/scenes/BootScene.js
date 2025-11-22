@@ -24,7 +24,7 @@ export default class BootScene extends Phaser.Scene {
                 this.registry.set('music', music);
             }
 
-
+            this.registry.set('hp', 100);
             // this.scene.start('MainMenuScene');
             this.scene.start('MainMenuScene');
         })
